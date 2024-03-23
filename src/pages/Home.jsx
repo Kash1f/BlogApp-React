@@ -2,6 +2,8 @@
 
 const Home = () => {
 
+  //we will show a card for each post on the homepage
+
   const posts = [
     {
       title: "Games and Books",
