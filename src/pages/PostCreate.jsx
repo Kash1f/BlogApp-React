@@ -19,8 +19,7 @@ const PostCreate = () => {
           <textarea
             className="border-0 outline-0 p-2 ring-1 ring-indigo-400 rounded-lg w-full block mt-1 focus:ring-2"
             value={body}
-            onChange={(e) => setBody(e.target.value)}
-          ></textarea>
+            onChange={(e) => setBody(e.target.value)}></textarea>
         </div>
         <button className="bg-indigo-400 text-white block w-full p-2 rounded-lg hover:bg-indigo-600">
           Create
