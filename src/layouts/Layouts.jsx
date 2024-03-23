@@ -1,8 +1,10 @@
-
+import { Link, Outlet } from "react-router-dom"
 
 const Layouts = () => {
   return (
     <>
+
+
     <header className="border-b pb-4">
     <nav className="flex items-center justify-between">
       <h1 className="font-bold text-indigo-600">MyBlog</h1>
@@ -21,9 +23,11 @@ const Layouts = () => {
     </nav>
   </header>
 
+
   <main className="py-8 px-2">
-    {/* <Outlet /> */}
+    <Outlet />
   </main>
+ 
   </>
   )
 }
