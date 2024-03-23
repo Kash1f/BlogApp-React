@@ -9,14 +9,12 @@ const Layouts = () => {
       <div>
         <Link
           className="px-3 py-1 rounded-md hover:bg-indigo-600 hover:text-white"
-          to="/"
-        >
+          to="/">
           Home
         </Link>
         <Link
           className="px-3 py-1 rounded-md hover:bg-indigo-600 hover:text-white ml-4"
-          to="/create"
-        >
+          to="/create">
           New Post
         </Link>
       </div>
@@ -24,7 +22,7 @@ const Layouts = () => {
   </header>
 
   <main className="py-8 px-2">
-    <Outlet />
+    {/* <Outlet /> */}
   </main>
   </>
   )
