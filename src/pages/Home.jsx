@@ -1,3 +1,4 @@
+import PostItem from "../components/PostItem"
 
 
 const Home = () => {
@@ -24,7 +25,9 @@ const Home = () => {
 
 
   return (
-    <div>Home</div>
+    <>
+    <PostItem post={posts}/>
+    </>
   )
 }
 
