@@ -29,8 +29,8 @@ const Layouts = () => {
   </main>
  
   </>
-  )
-}
+  );
+};
 
 
-export default Layouts
+export default Layouts;

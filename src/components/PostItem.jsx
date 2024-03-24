@@ -1,26 +1,26 @@
 /* eslint-disable react/prop-types */
-const PostItem = ({posts}) => {
+const PostItem = ({posts, handleDelete}) => {
   return (
     <>
 
-   {posts && posts.map((item)=> (
-        <div key={item.id} className="p-6 border-b">
-            <div className="mb-4 flex justify-between items-start">
+    {/* here posts && posts means that map function will run when it will be truthy */}
+   {posts && posts.map((post)=> (
+        <div key={post.id} className="p-6 border-b">
+            <div className="mb-4 flex justify-between posts-start">
             <div>
               <h2 className="font-bold -mb-2 text-lg text-indigo-500">
-                {item.title}
+                {post.title}
               </h2>
               <small className="text-gray-500 text-xs">
-                itemed on: {item.created_at}
+                Posted on: {post.created_at}
               </small>
               </div>
-              <button
+              <button onClick={handleDelete}
               className="h-6 w-6 bg-red-500 text-white rounded-full">X</button>
 
         </div>
-        <p>{item.body}</p>
-        </div>
-       
+        <p>{post.body}</p>
+        </div>    
   ))}
   </>
   )

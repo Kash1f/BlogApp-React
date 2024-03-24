@@ -12,23 +12,25 @@ const Home = () => {
       created_at: "10/3/2024",
       id:1
     },
-    [
+    
       {
-        title: "Games and Books",
+        title: "Marvel",
         body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sed distinctio nesciunt laborum minima corrupti suscipit repudiandae et aliquid veritatis ab molestias excepturi dicta doloremque, at quaerat earum ullam neque!",
         created_at: "10/3/2024",
-        id:1
+        id:2
   
-      }
-    ]
+      }, 
   ]
 
+  const handleDelete = () => {
+    console.log("deleted");
+  }
 
   return (
     <>
-    <PostItem post={posts}/>
+    <PostItem posts={posts} handleDelete={handleDelete} />
     </>
   )
 }
 
-export default Home
+export default Home;

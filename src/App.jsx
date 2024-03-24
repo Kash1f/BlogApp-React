@@ -3,6 +3,7 @@ import Layout from "./layouts/Layouts";
 import Home from "./pages/Home";
 import PostCreate from "./pages/PostCreate";
 
+
 function App() {
   return (
     <BrowserRouter>
@@ -10,6 +11,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="create" element={<PostCreate />} />
+         
         </Route>
       </Routes>
     </BrowserRouter>
