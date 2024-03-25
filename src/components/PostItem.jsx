@@ -15,7 +15,7 @@ const PostItem = ({posts, handleDelete}) => {
                 Posted on: {post.created_at}
               </small>
               </div>
-              <button onClick={handleDelete}
+              <button onClick={()=> handleDelete(post.id)}
               className="h-6 w-6 bg-red-500 text-white rounded-full">X</button>
 
         </div>
