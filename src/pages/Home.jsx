@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import PostItem from "../components/PostItem"
 
 
@@ -7,6 +7,10 @@ const Home = () => {
   const [posts, setPosts] = useState()
 
   //we will show a card for each post on the homepage
+
+  useEffect(()=>{
+    fetch('')
+  })
 
 
   const handleDelete = (id) => {
