@@ -9,16 +9,18 @@ const Home = () => {
   //we will show a card for each post on the homepage
 
   useEffect(()=>{
-    fetch('')
-  })
+    fetch('http://localhost:3000/posts')
+    .then(res=>res.json())
+    .then(data=>setPosts(data))
+  },[])
 
 
   const handleDelete = (id) => {
     
     //we have to filter this post array and remove the post with the same ID as the ID we are getting from the child component
     setPosts(posts.filter((posts)=> posts.id !==id))
-  
-    console.log(posts);
+    fetch('http://localhost:3000/posts')
+    
   }
 
   return (
